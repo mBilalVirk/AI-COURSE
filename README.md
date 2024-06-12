@@ -207,3 +207,68 @@ Here are explanations and sample uses of a few Python keywords:
    ```
 
 These keywords are fundamental building blocks of Python programming, and understanding them is essential for writing syntactically correct and functional code. Each keyword has a specific role, and misusing them can lead to syntax errors or unexpected behavior in the program.
+
+### Explanation
+
+There are two methods demonstrated here for formatting strings in Python: the `format` method and f-strings.
+
+#### Using `format` Method
+
+```python
+a = 20
+b = 10
+print("The Variable a = {} and Variable b = {}".format(a, b))
+```
+
+- **`"The Variable a = {} and Variable b = {}".format(a, b)`**: This string contains placeholders `{}` that will be replaced by the values of `a` and `b`.
+- **`.format(a, b)`**: The `format` method takes the values `a` and `b` and inserts them into the placeholders `{}` in the order they appear.
+
+#### Using f-Strings
+
+```python
+a = 20
+b = 10
+print(f"The Variable a = {a} and Variable b = {b}")
+```
+
+- **`f"The Variable a = {a} and Variable b = {b}"`**: This is an f-string (formatted string literal). The `f` before the string tells Python to evaluate expressions inside `{}` and replace them with their values.
+- **`{a}` and `{b}`**: These placeholders are replaced directly with the values of `a` and `b`.
+
+### Differences Between `format` and f-Strings
+
+1. **Syntax and Readability**:
+
+   - **`format` Method**: Uses a more verbose syntax where the placeholders `{}` in the string are matched with arguments passed to the `format` method.
+     ```python
+     "The Variable a = {} and Variable b = {}".format(a, b)
+     ```
+   - **f-Strings**: Provide a more concise and readable syntax by allowing expressions to be directly embedded inside string literals.
+     ```python
+     f"The Variable a = {a} and Variable b = {b}"
+     ```
+
+2. **Performance**:
+
+   - **f-Strings**: Generally faster than the `format` method because they are evaluated at runtime and are more efficient.
+   - **`format` Method**: Slightly slower due to the overhead of the method call.
+
+3. **Flexibility**:
+   - **`format` Method**: More flexible for complex formatting tasks, especially when reordering or repeating variables.
+     ```python
+     "First: {1}, Second: {0}, Again First: {1}".format(a, b)
+     ```
+   - **f-Strings**: Best suited for simple and straightforward formatting tasks. They support expressions directly inside the braces.
+     ```python
+     f"The sum of a and b is {a + b}"
+     ```
+
+### Output
+
+Both methods will produce the same output for the given examples:
+
+```
+The Variable a = 20 and Variable b = 10
+The Variable a = 20 and Variable b = 10
+```
+
+Despite the different syntax and performance characteristics, both achieve the same result: dynamically inserting the values of `a` and `b` into the string.
