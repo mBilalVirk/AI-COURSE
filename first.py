@@ -11,3 +11,5 @@ a = 20
 b = 10
 print(f"The Variable a = {a} and Variable b = {b}")
 print("The Variable a = {0} and Variable b = {1}".format(a, b))
+
+
