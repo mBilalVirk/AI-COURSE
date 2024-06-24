@@ -1,4 +1,4 @@
-# Q1: Declare 10 identifiers. Assign data of multiple types and print them. Moreover, 
+# Q1: Declare 10 identifiers. Assign data of multiple types and print them. Moreover, declare an identifier with name of a keyword and show the result.
 int_1=10
 float_2=2.3
 str_3="Hello World"
