@@ -342,3 +342,196 @@ Reinforcement learning involves training an agent to make a sequence of decision
 - **Reinforcement Learning:** Learn to make decisions through trial and error to maximize rewards.
 
 Each type of machine learning has its own set of techniques and applications, and the choice of which to use depends on the specific problem and the nature of the data available.
+
+### Lab Task 1
+
+### Q1: Declare 10 identifiers, assign data of multiple types, and print them. Moreover, declare an identifier with the name of a keyword and show the result.
+
+```python
+# Declaring 10 identifiers with different data types
+int_1 = 10
+float_2 = 2.3
+str_3 = "Hello World"
+lst_4 = [3.3, 4, "Program", "Q1"]
+complex_5 = 2 + 3j
+bool_6 = True
+bool_7 = False
+str_8 = "This is a program"
+lst_9 = [222, 332.22, "Hello", "Program", "Q1"]
+list_10 = [1, 2, 3, 4, 5]
+
+# Printing the identifiers
+print("Integer:", int_1)
+print("Float:", float_2)
+print("String 1:", str_3)
+print("List 1:", lst_4)
+print("Complex number:", complex_5)
+print("Boolean True:", bool_6)
+print("Boolean False:", bool_7)
+print("String 2:", str_8)
+print("List 2:", lst_9)
+print("List 3:", list_10)
+
+# Attempting to declare an identifier with the name of a keyword (this will cause an error)
+try:
+    class = "This will show an error!"  # This line will cause a syntax error
+    print(class)
+except SyntaxError as e:
+    print(f"Syntax error: {e}")
+```
+
+### Q2: Import and print all Python keywords.
+
+```python
+import keyword
+
+# Printing the total number of keywords and the list of keywords
+print("Total number of keywords:", len(keyword.kwlist))
+print("Keywords are:", keyword.kwlist)
+```
+
+### Q4: Print 5 integer values using the format function. Print the statement “The Temperature in Islamabad today is 22.02 degrees outside!” using format.
+
+```python
+# Declaring 5 integer values
+number1 = 1
+number2 = 2
+number3 = 3
+number4 = 4
+number5 = 5
+
+# Using the format function to print the integers
+print("First Number is {} Second Number is {} Third Number is {} Fourth number is {} Fifth number is {}".format(number1, number2, number3, number4, number5))
+
+# Printing the statement with format function
+city = "Islamabad"
+temp = 22.02
+print("The Temperature in {} today is {} degrees outside!".format(city, temp))
+```
+
+### Q5: Add a screenshot of adding single and multiple line comments in Python.
+
+```python
+# Following statement prints Hello World on the screen
+print("Hello World")
+
+"""
+This is a
+multi-line
+comment
+"""
+```
+
+### Q6: Assign one same value to 3 different identifiers and print their memory addresses.
+
+```python
+# Assigning the same value to 3 different identifiers
+first = 40
+second = 40
+third = 40
+
+# Printing their memory addresses
+print(id(first))
+print(id(second))
+print(id(third))
+```
+
+### Q7: Declare 5 identifiers, assign values (int, float, string, Boolean, complex), and print their data types using the `type` function.
+
+```python
+# Declaring identifiers with different data types
+intIden = 30
+floatIden = 30.234
+stringIden = "This is a String"
+boolIden = True
+complexIden = 3 + 3j
+
+# Printing the data types of the identifiers
+print(type(intIden))
+print(type(floatIden))
+print(type(stringIden))
+print(type(boolIden))
+print(type(complexIden))
+```
+
+### Q8: Use `isinstance` to check for float and complex values.
+
+```python
+# Checking if a value is a complex number
+float_1 = 32.9
+print(isinstance(float_1, complex))  # This will return False
+```
+
+### Q9: Declare a string “Python lab conduction” and print the address by location for each character in the string.
+
+```python
+# Declaring the string
+pyLab = "Python lab conduction"
+
+# Printing the memory address of each character in the string
+for char in pyLab:
+    print(f"Location of '{char}' is {id(char)}")
+```
+
+### Q10: Apply slicing on the given list and show the result.
+
+```python
+# Given list
+L = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
+
+# Applying slicing operations
+slice1 = L[:]
+slice2 = L[5:]
+slice3 = L[:5]
+slice4 = L[:-2]
+slice5 = L[-7:-2]
+
+# Showing the result
+print("L[:]:", slice1)
+print("L[5:]:", slice2)
+print("L[:5]:", slice3)
+print("L[:-2]:", slice4)
+print("L[-7:-2]:", slice5)
+```
+
+### Standard Program to Perform Arithmetic Operations on Two Numbers in Python
+
+```python
+# Taking input from the user
+num1 = int(input("Enter first integer: "))
+num2 = int(input("Enter second integer: "))
+
+# Performing arithmetic operations
+addition = num1 + num2
+subtraction = num1 - num2
+multiplication = num1 * num2
+division = num1 / num2 if num2 != 0 else 'undefined (division by zero)'
+
+# Printing the results
+print("Addition:", addition)
+print("Subtraction:", subtraction)
+print("Multiplication:", multiplication)
+print("Division:", division)
+```
+
+### Python Program for Various List Operations
+
+```python
+import statistics
+
+# Given list
+lst = [33, 83, 83, 34, 76, 97, 12, 9, 39]
+
+# a. Interchange first and last elements in a list
+print("Original list is:", lst)
+lst[0], lst[-1] = lst[-1], lst[0]
+print("Interchanged first and last elements in a list:", lst)
+
+# b. To sum all elements in a list
+sum_of_elements = sum(lst)
+print("Sum of all elements in a list:", sum_of_elements)
+
+# c. To calculate mean and median of a list
+print("Mean:", statistics.mean(lst))
+print("Median:", statistics.median(lst))
+```

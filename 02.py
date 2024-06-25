@@ -28,10 +28,10 @@
 # print(s[0:2])
 # print(s[3:4])
 # print(s[1:6])
-thisList=["apple", "Banana", "Cherry", "Apple", "Cherry"]
-print(thisList)
-thisList=["apple", 0.3 , "Cherry", "Apple", "Cherry"]
-print(thisList)
-print(type(thisList))
-thisList[3]="Hello"
-print(thisList)
+# thisList=["apple", "Banana", "Cherry", "Apple", "Cherry"]
+# print(thisList)
+# thisList=["apple", 0.3 , "Cherry", "Apple", "Cherry"]
+# print(thisList)
+# print(type(thisList))
+# thisList[3]="Hello"
+# print(thisList)
