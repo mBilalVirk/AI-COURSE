@@ -535,3 +535,66 @@ print("Sum of all elements in a list:", sum_of_elements)
 print("Mean:", statistics.mean(lst))
 print("Median:", statistics.median(lst))
 ```
+
+Here's a detailed explanation of each program and the corrected versions for clarity and completeness:
+
+### Program to Perform Arithmetic Operations on Two Numbers
+
+This program takes two integers as input from the user and performs basic arithmetic operations: addition, subtraction, multiplication, and division.
+
+```python
+# Taking input from the user
+num1 = int(input("Enter first integer: "))
+num2 = int(input("Enter second integer: "))
+
+# Performing arithmetic operations
+addition = num1 + num2
+subtraction = num1 - num2
+multiplication = num1 * num2
+division = num1 / num2 if num2 != 0 else 'undefined (division by zero)'
+
+# Printing the results
+print("Addition:", addition)
+print("Subtraction:", subtraction)
+print("Multiplication:", multiplication)
+print("Division:", division)
+```
+
+### Python Program for Various List Operations
+
+This program performs three different operations on a list: interchanging the first and last elements, summing all elements, and calculating the mean and median.
+
+```python
+import statistics
+
+# Given list
+lst = [33, 83, 83, 34, 76, 97, 12, 9, 39]
+
+# a. Interchange first and last elements in a list
+print("Original list is:", lst)
+lst[0], lst[-1] = lst[-1], lst[0]
+print("Interchanged first and last elements in a list:", lst)
+
+# b. To sum all elements in a list
+sum_of_elements = sum(lst)
+print("Sum of all elements in a list:", sum_of_elements)
+
+# c. To calculate mean and median of a list
+print("Mean:", statistics.mean(lst))
+print("Median:", statistics.median(lst))
+```
+
+### Explanation of the List Operations Program
+
+1. **Interchanging First and Last Elements:**
+   - The program swaps the first and last elements of the list.
+   - `lst[0], lst[-1] = lst[-1], lst[0]` swaps the elements at index 0 and index -1 (the last element).
+2. **Sum of All Elements:**
+   - The program calculates the sum of all elements in the list using the built-in `sum` function.
+   - `sum_of_elements = sum(lst)` stores the sum of the list elements in `sum_of_elements`.
+3. **Calculating Mean and Median:**
+   - The program calculates the mean and median of the list using the `statistics` module.
+   - `statistics.mean(lst)` returns the average of the list elements.
+   - `statistics.median(lst)` returns the median value of the list elements.
+
+These programs demonstrate basic arithmetic operations and common list manipulations in Python. Each operation is performed step by step, and the results are printed for verification.
