@@ -1,0 +1,107 @@
+
+
+NAVTACC
+Module: “Artificial Intelligence”
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+Machine Learning Libraries & Data Manipulation
+
+
+
+
+
+
+
+
+Introduction to important libraries
+1.	Matplotlib
+Matplotlib is a low-level graph plotting library in python that serves as a visualization utility.
+Installation of Matplotlib
+If there is no pre-installed matplotlib in your python editor, then install it using this command:
+ 
+Once Matplotlib is installed, import it in your applications by adding the import module statement as follows:
+ 
+pyplot is a collection of functions that make matplotlib work like MATLAB. Each pyplot function makes some change to a figure: e.g., creates a figure, creates a plotting area in a figure, plots some lines in a plotting area, decorates the plot with labels, etc. 
+Matplotlib Plotting
+The plot() function is used to draw points (markers) in a diagram. By default, the plot() function draws a line from point to point. The function takes parameters for specifying points in the diagram. Parameter 1 is an array containing the points on the x-axis. Parameter 2 is an array containing the points on the y-axis.
+ 
+2.	Pandas 
+Pandas is a Python library used for working with data sets. It has functions for analyzing, cleaning, exploring, and manipulating data. The name "Pandas" has a reference to both "Panel Data", and "Python Data Analysis"
+Installation of Pandas
+If there are no pre-installed pandas in your python editor, then install it using this command:
+ 
+Once Pandas is installed, import it in your applications by adding the import keyword. The primary two components of pandas are the Series and DataFrame.
+1.	Panda Series:
+A Pandas Series is like a column in a table. It is a one-dimensional array holding data of any type.
+ 
+If nothing else is specified, the values are labeled with their index number. First value has index 0, second value has index 1 etc. With the index argument, you can name your own labels.
+2.	Panda DataFrames
+A Pandas DataFrame is a 2-dimensional data structure, like a 2-dimensional array, or a table with rows and columns.
+ 
+Loading and reading data from CSVs
+1.	Create a new text file of extension .csv
+•	Use the following data:
+sky,air temp,humidity,wind,water,forecast,enjoy sport
+sunny,warm,normal,strong,warm,same,yes
+sunny,warm,high,strong,warm,same,yes
+rainy,cold,high,strong,warm,change,no
+sunny,warm,high,strong,cool,change,yes
+
+•	Save it with lab2.csv name
+•	Create a new python3 file
+•	Read the data with the command and then display it
+import pandas as pd
+import numpy as np
+data = pd.read_csv('lab2.csv')
+data
+
+2.	Use the link to load the data:  https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
+ 
+ 
+
+
+
+
+
+LAB TASK 01:
+•	From above given datasets, write a Pandas program to get the
+o	First 3 rows
+o	Last 5 rows
+o	Number of rows and columns
+o	Add and drop any column
+LAB TASK 02:
+Write a Pandas program to select the rows where the score is missing, i.e. is NaN.
+Sample Output:
+ Rows where scorre is missing:
+	attempts	name	qualify	score
+d	3		James	no	NaN
+h	1		laura	no	Nan
+
+
+LAB TASK 03:
+Write a Pandas program to create a bar plot of the trading volume of Alphabet Inc. stock between two specific dates.
+Click to download the dataset.
+Sample Output:
+
+
+
+
+
+
+
+
+
+

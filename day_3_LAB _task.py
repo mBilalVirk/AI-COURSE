@@ -123,6 +123,7 @@ Q3 = ds.quantile(0.75)
 print("Q1 (25th percentile):\n", Q1)
 print("Q2 (50th percentile, median):\n", Q2)
 print("Q3 (75th percentile):\n", Q3)
+print("\n")
 
 
 # correlation_matrix = ds.corr()
